@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: lightgray!important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card {
+  background: red;
+}
+
+.name{
+  background: lightgray;
+  font-family: ligatures;
+  padding: 8rem!important;
+}
+
+.linkRow{
+  padding-left: 40px;
 }
