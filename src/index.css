@@ -15,6 +15,7 @@ code {
 
 .card {
   background: red;
+  --bs-card-border-width: 0px!important;
 }
 
 .name{
