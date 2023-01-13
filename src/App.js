@@ -13,10 +13,11 @@ import Row from 'react-bootstrap/Row';
 import Col from "react-bootstrap/Col";
 
 
-
 function App() {
-    let gitHubLink = 'https://github.com/nycosborne';
-    let linkedinLink = 'https://www.linkedin.com/in/dan-osborne/';
+
+    // Links out to account profiles.
+    const gitHubLink = 'https://github.com/nycosborne';
+    const linkedinLink = 'https://www.linkedin.com/in/dan-osborne/';
 
     return (
         <Container fluid>
