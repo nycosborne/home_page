@@ -8,12 +8,24 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install
-      - run: npm run build
+      - name: Code checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+          echo "Building - npm ci"
+          set NODE_ENV=CI && npm ci --legacy-peer-deps --ignore-scripts --include=dev
+          echo "Building - npm run build"
+          npm run build
+        shell: cmd
+
+
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: '14'
+#      - run: npm install
+#      - run: npm run build
 
 
 
