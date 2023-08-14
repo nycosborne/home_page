@@ -1,5 +1,5 @@
 node_modules
-Dockerfile
+local_build/node/Dockerfile
 .github
 .gitignore
 .git

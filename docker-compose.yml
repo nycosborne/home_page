@@ -2,7 +2,9 @@ version: "3.7"
 
 services:
   home_page:
-    build: .
+    build:
+      context: .
+      dockerfile: local_build/node/Dockerfile
     ports:
       - "3000:3000"
     volumes:
@@ -12,3 +14,4 @@ services:
       - REACT_APP_NOT_SECRET_CODE=re-run
     env_file:
       - ./.env
+
