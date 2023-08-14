@@ -10,7 +10,8 @@ function Name() {
             <Row className="justify-content-md-center">
                 <Col md="auto">
                     <h1>Dan Osborne</h1>
-                    <h1>{`Hello ${process.env.REACT_APP_NAME}`}</h1>
+                    <h1>{`Hellooo ${process.env.REACT_APP_NAME}`}</h1>
+                    <h1>Hello ${process.env.REACT_APP_NOT_SECRET_CODE}</h1>
                     <h3 className="tag">$passion = Building Useful Things</h3>
                 </Col>
             </Row>
