@@ -1,0 +1,7 @@
+node_modules
+local_build/node/Dockerfile
+.github
+.gitignore
+.git
+.dockerignore
+.env

@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  home_page:
+    build:
+      context: .
+      dockerfile: local_build/node/Dockerfile
+    ports:
+      - "3000:3000"
+      - "80:80"
+    volumes:
+      - ./src:/home_page/src:ro
+    environment:
+      - REACT_APP_NAME=myNameSLIME
+      - REACT_APP_NOT_SECRET_CODE=re-run
+    env_file:
+      - ./.env
+
