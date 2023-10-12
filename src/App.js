@@ -20,7 +20,7 @@ function App() {
     const linkedinLink = 'https://www.linkedin.com/in/dan-osborne/';
 
     return (
-        <Container fluid>
+        <Container fluid="md">
             <Row>
                 <NavBar/>
                 <Name/>
