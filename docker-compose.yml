@@ -9,7 +9,7 @@ services:
       - "3000:3000"
       - "80:80"
     volumes:
-      - ./src:/home_page/src:ro
+      - ./src:/home_page/src
     environment:
       - REACT_APP_NAME=myNameSLIME
       - REACT_APP_NOT_SECRET_CODE=re-run
